@@ -39,6 +39,16 @@ inherit заставляет наследовать текстовые свой�
   margin: -1px;
 }
 
+/*----------html----------*/
+html {
+  box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
 /*----------body----------*/
 body {
   color: var(--primary-text-color);
