@@ -11,8 +11,8 @@ inherit заставляет наследовать текстовые свой�
   --secondary-text-color: #212121;
   --primary-title-color: #212121;
   --secondary-title-color: #ffffff;
-  --primary-bgc-color: #e5e5e5;
-  --secondary-bgc-color: #f5f4fa;
+  --primary-bgc-color: #f5f4fa;
+  --secondary-bgc-color: #e5e5e5;
   --thirty-bgc-color: #2f303a;
   --accent-color: #2196f3;
 }
@@ -212,6 +212,17 @@ body {
 }
 .advantages-item:not(:last-child) {
   margin-right: 30px;
+}
+.advantages-item::before {
+  display: block;
+  content: '';
+  height: 120px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: var(--secondary-bgc-color);
+  border-radius: 4px;
+  margin-bottom: 30px;
 }
 .advantages-title {
   margin-bottom: 10px;
